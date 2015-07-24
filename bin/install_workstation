@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+cd ~/compozed-workstation/
+git submodule update --recursive 
+
+# Sprout wrap installation
+
+cd ~/compozed-workstation/sprout-wrap
+xcode-select --install
+sudo gem install bundler
+caffeinate bundle exec soloist
+
+# Vim configs installation
+
+ln -s ~/compozed-workstation/vim-config/ ~/.vim
+~/.vim/bin/install
+
+# Copy bin folder
+ln -s ~/compozed-workstation/bin/ ~/bin
+
+# Add bin to path
+echo "export PATH=$PATH:~/bin" >> .bash_profile
+
+

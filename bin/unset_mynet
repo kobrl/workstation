@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo networksetup -switchtolocation automatic
+~/bin/set_proxy
