@@ -8,6 +8,7 @@ git submodule update --init
 cd ~/compozed-workstation/sprout-wrap
 xcode-select --install
 sudo gem install bundler
+sudo bundle install
 caffeinate bundle exec soloist
 
 # Vim configs installation
