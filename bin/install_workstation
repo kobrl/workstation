@@ -25,4 +25,5 @@ ln -s ~/compozed-workstation/bin/ ~/bin
 echo "export PATH=$PATH:~/bin" >> ~/.bash_profile
 
 
-
+echo 'Rebooting ...'
+sudo reboot
