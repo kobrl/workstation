@@ -2,16 +2,16 @@
 
 ## Installation
 
-0. Ensure you are on the Allstate network (wired network).
+0. Ensure you have access via https to github.com.
 
-0. Clone the `compozed-workstation` github.allstate.com project.
+0. Clone the `compozed-workstation` github.com project.
 
   ```
   cd $HOME
-  git clone https://github.allstate.com/PlatformEngineering/compozed-workstation.git  
+  git clone https://github.com/compozed/compozed-workstation.git  
   ```
 
-0. Enable WIFI and switch to MyNet.
+0. run install script.
 
   ```
   ./workstation/bin/install_workstation
