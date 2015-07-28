@@ -24,6 +24,8 @@ ln -s ~/compozed-workstation/bin/ ~/bin
 # Add bin to path
 echo "export PATH=$PATH:~/bin" >> ~/.bash_profile
 
+# Tmux configs
+ln -s ~/compozed-workstation/.tmux.conf ~/.tmux.conf
 
 echo 'Rebooting ...'
 sudo reboot
