@@ -25,3 +25,18 @@
   ```
 
 
+## Update existing workstation
+
+0. Bring latest code to repo
+
+  ```
+  cd $HOME/compozed-worstation/
+  git pull origin master
+  ```
+
+0. Re run install_workstation
+
+  ```
+  cd $HOME
+  ./compozed-workstation/bin/install_workstation
+  ```
