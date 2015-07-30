@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 
+set -e
+
 cd ~/compozed-workstation/
 git submodule update --init
 
 # Sprout wrap installation
 
 cd ~/compozed-workstation/sprout-wrap
+if [ ! -x /usr/bin/gcc ]; then
 xcode-select --install
+fi
 sudo gem install bundler
 sudo bundle install
 caffeinate bundle exec soloist
@@ -25,7 +29,10 @@ ln -s ~/compozed-workstation/bin/ ~/bin
 echo "export PATH=$PATH:~/bin" >> ~/.bash_profile
 
 # Tmux configs
+rm -rf ~/.tmux.conf
 ln -s ~/compozed-workstation/.tmux.conf ~/.tmux.conf
 
+echo 'FINISH WORKSTATION INSTALLATION SUCCESSFULLY'
+read -p "Hit ENTER to reboot or ctrl+c to exit" ;
 echo 'Rebooting ...'
 sudo reboot
