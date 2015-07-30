@@ -27,6 +27,7 @@ ln -s ~/compozed-workstation/bin/ ~/bin
 
 # Add bin to path
 echo "export PATH=$PATH:~/bin" >> ~/.bash_profile
+echo "git config --global hub.protocol https" >> ~/.bash_profile
 
 # Tmux configs
 rm -rf ~/.tmux.conf
